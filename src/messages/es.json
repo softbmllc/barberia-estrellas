@@ -1,0 +1,75 @@
+{
+  "brand": "Barbería de las Estrellas",
+  "nav": {
+    "services": "Servicios",
+    "team": "Equipo",
+    "socialClub": "Social Club",
+    "gallery": "Galería",
+    "press": "Prensa",
+    "location": "Ubicación",
+    "book": "Reservar",
+    "langToggle": {"toEn": "EN", "toEs": "ES"}
+  },
+  "footer": {
+    "brandLine": "Wynwood · Free Parking",
+    "sections": "Secciones",
+    "contact": "Contacto",
+    "whatsapp": "WhatsApp",
+    "locationParking": "Ubicación & Parking",
+    "copyright": "© {year} Barbería de las Estrellas"
+  },
+  "hero": {
+    "title": "Barbería de las Estrellas — Wynwood, Miami",
+    "subtitle": "Cortes de alto nivel en un espacio social: pool, café y buena música.",
+    "ctaNico": "Reservar con Nico",
+    "ctaEquipo": "Ver equipo"
+  },
+  "infobar": {
+    "wynwood": "Wynwood",
+    "parking": "Free Parking",
+    "rating": "5.0★ Reviews"
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Elegí tu servicio y reservá con Nico o con el equipo.",
+    "from": "desde",
+    "ctaNico": "Reservar con Nico",
+    "ctaTeam": "Elegir barbero"
+  },
+  "team": {
+    "title": "Nuestro Equipo",
+    "subtitle": "Staff certificado en Wynwood — profesionales de distintas partes del mundo que aportan su estilo y experiencia.",
+    "viewProfile": "Ver perfil",
+    "reserve": "Reservar",
+    "instagram": "Instagram",
+    "comingSoon": "Próximamente: perfiles de barberos con su historia, especialidades y redes sociales."
+  },
+  "reserve": {
+    "title": "Reservar",
+    "subtitle": "Elegí reservar con Nico o con nuestro equipo.",
+    "withNico": "Reservar con Nico",
+    "chooseBarber": "Elegir barbero",
+    "embedPlaceholder": "Próximamente: embed o deep-links de Square."
+  },
+  "socialClub": {
+    "title": "Social Club",
+    "subtitle": "Pool, café, living y eventos privados.",
+    "comingSoon": "Próximamente: galería del espacio y formulario de eventos."
+  },
+  "gallery": {
+    "title": "Galería",
+    "subtitle": "Trabajos de cortes, color y diseño.",
+    "comingSoon": "Próximamente: grid de imágenes"
+  },
+  "press": {
+    "title": "Prensa & Colaboraciones",
+    "subtitle": "Clips, menciones y partnerships.",
+    "comingSoonLogos": "Próximamente: logos y enlaces",
+    "comingSoonReels": "Próximamente: reels destacados"
+  },
+  "locationPage": {
+    "title": "Ubicación & Parking",
+    "subtitle": "Cómo llegar a nuestra barbería en Wynwood. Free Parking.",
+    "comingSoon": "Próximamente: mapa incrustado y guía de parking."
+  }
+}

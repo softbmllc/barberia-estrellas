@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Barbería de las Estrellas 🌟✂️
 
-## Getting Started
+Sitio oficial de **Barbería de las Estrellas**, liderada por **Nico Jaffe** en Wynwood, Miami.  
+Un espacio de barbería premium con perfil social: pool, café, living y ambiente de tendencias para clientes, artistas e influencers.
 
-First, run the development server:
+---
+
+## 🚀 Stack Técnico
+
+- **Framework**: [Next.js 15](https://nextjs.org) (App Router, TypeScript, Turbopack)
+- **Estilos**: TailwindCSS + shadcn/ui
+- **Internacionalización**: [`next-intl`](https://next-intl.dev) (ES/EN)
+- **Fuentes**: [Geist Sans & Mono](https://vercel.com/font)
+- **CMS**: Sanity / Payload (para equipo, servicios, galería, eventos)
+- **Hosting**: Vercel
+- **Optimización de imágenes**: ImageKit / Cloudinary
+- **Reservas**: Integración con Square (deep-links + embed)
+
+---
+
+## 📂 Estructura de Páginas
+
+- `/` – Landing con:
+  - Hero con micro-reel y CTA dual (Reservar con Nico / Ver Equipo)
+  - Servicios destacados
+  - Equipo destacado (carrusel)
+  - Social Club (pool, café, living)
+  - Galería
+  - Prensa & Colaboraciones
+  - Ubicación + Free Parking
+- `/equipo` – Grid de barberos (filtros por especialidad, idioma).
+- `/equipo/[slug]` – Perfil individual (bio, especialidades, galería, agenda Square).
+- `/precios` – Tabla de servicios con precios y políticas.
+- `/social-club` – Espacio social + eventos privados.
+- `/galeria` – Galería de cortes, color y diseños.
+- `/prensa` – Colaboraciones y apariciones mediáticas.
+- `/ubicacion` – Mapa + info de parking.
+- `/reservar` – Selector y embed Square.
+
+---
+
+## 🎯 Objetivo del Proyecto
+
+- **Embudo claro a reserva**: que cualquier visitante pueda agendar rápido con Nico o el equipo.
+- **Potenciar la marca de Nico Jaffe**: barbero reconocido, cantante e influencer.
+- **Dar protagonismo al equipo**: cada barbero con su perfil, agenda y estilo.
+- **Posicionar la barbería como espacio social y cultural** en Miami.
+
+---
+
+## 🛠️ Desarrollo Local
+
+### Instalación
+
+```bash
+npm install
+```
+
+### Servidor de desarrollo
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📊 Medición
 
-## Learn More
+- GA4 + Meta Pixel con eventos clave:
+  - `hero_primary_cta`
+  - `open_booking`
+  - `whatsapp_click`
+  - `booking_success`
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Roadmap
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [x] Base Next.js + Tailwind + next-intl
+- [ ] Navbar + Footer
+- [ ] Landing con Hero, InfoBar y CTA dual
+- [ ] Sección Equipo + Perfil barbero
+- [ ] Integración Square (deep-links / embed)
+- [ ] Galería + Social Club
+- [ ] Traducciones EN
+- [ ] Optimización SEO + OG dinámicos
+- [ ] Go Live en Vercel 🚀
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👤 Autor
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proyecto desarrollado por [Rodrigo “Lolo”](https://www.devrodri.com) para **Barbería de las Estrellas**.

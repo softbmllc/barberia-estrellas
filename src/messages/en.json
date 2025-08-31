@@ -1,0 +1,75 @@
+{
+  "brand": "Barbería de las Estrellas",
+  "nav": {
+    "services": "Services",
+    "team": "Team",
+    "socialClub": "Social Club",
+    "gallery": "Gallery",
+    "press": "Press",
+    "location": "Location",
+    "book": "Book",
+    "langToggle": {"toEn": "EN", "toEs": "ES"}
+  },
+  "footer": {
+    "brandLine": "Wynwood · Free Parking",
+    "sections": "Sections",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp",
+    "locationParking": "Location & Parking",
+    "copyright": "© {year} Barbería de las Estrellas"
+  },
+  "hero": {
+    "title": "Barbería de las Estrellas — Wynwood, Miami",
+    "subtitle": "Top‑tier cuts in a social space: pool, coffee, great music.",
+    "ctaNico": "Book Nico",
+    "ctaEquipo": "Meet the team"
+  },
+  "infobar": {
+    "wynwood": "Wynwood",
+    "parking": "Free Parking",
+    "rating": "5.0★ Reviews"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Choose your service and book with Nico or with our team.",
+    "from": "from",
+    "ctaNico": "Book with Nico",
+    "ctaTeam": "Choose barber"
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Certified staff in Wynwood — professionals from different parts of the world bringing their style and experience.",
+    "viewProfile": "View profile",
+    "reserve": "Book",
+    "instagram": "Instagram",
+    "comingSoon": "Coming soon: barber profiles with their story, specialties and social links."
+  },
+  "reserve": {
+    "title": "Book",
+    "subtitle": "Choose to book with Nico or with our team.",
+    "withNico": "Book with Nico",
+    "chooseBarber": "Choose barber",
+    "embedPlaceholder": "Coming soon: Square embed or deep-links."
+  },
+  "socialClub": {
+    "title": "Social Club",
+    "subtitle": "Pool, coffee, lounge and private events.",
+    "comingSoon": "Coming soon: space gallery and event form."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Cuts, color and design work.",
+    "comingSoon": "Coming soon: image grid"
+  },
+  "press": {
+    "title": "Press & Collaborations",
+    "subtitle": "Clips, mentions and partnerships.",
+    "comingSoonLogos": "Coming soon: logos and links",
+    "comingSoonReels": "Coming soon: featured reels"
+  },
+  "locationPage": {
+    "title": "Location & Parking",
+    "subtitle": "How to find our barbershop in Wynwood. Free Parking.",
+    "comingSoon": "Coming soon: embedded map and parking guide."
+  }
+}
