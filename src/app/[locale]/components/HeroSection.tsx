@@ -8,6 +8,7 @@ export default function HeroSection() {
   const pathname = usePathname();
   const locale = (pathname?.split("/")[1] || "es") as "es" | "en";
   const isES = locale === "es";
+  const squareUrl = `https://book.squareup.com/appointments/b2flo8v91kroen/location/L9A40NYC216EP/services?buttonTextColor=ffffff&color=000000&locale=${isES ? "es" : "en"}&referrer=so&utm_source=site&utm_medium=hero&utm_campaign=booking&utm_content=primary`;
 
   const badge = "Wynwood · Miami";
   const title = "Barbería de las Estrellas"; // marca: se mantiene igual en EN
@@ -16,7 +17,7 @@ export default function HeroSection() {
     : "High-end barbering in Wynwood. Classic ritual, modern precision.";
   const perkItems = isES
     ? ["Wynwood", "Estacionamiento gratuito", "5.0★ Reviews", "Español & English"]
-    : ["Wynwood", "Free parking", "5.0★ Reviews", "Spanish & English"];
+    : ["Wynwood", "Free parking", "5.0★ Reviews", "Español & English"];
 
   return (
     <section className="relative isolate">
@@ -56,14 +57,14 @@ export default function HeroSection() {
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
-                href={`/${locale}/reservar`}
+                href={squareUrl}
                 aria-label={isES ? "Reservar turno" : "Book an appointment"}
                 className="inline-flex items-center justify-center rounded-full bg-neutral-100 px-5 py-2.5 text-neutral-900 font-medium hover:bg-white hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-900 w-full sm:w-auto"
               >
                 {isES ? "Reservar" : "Book Now"}
               </Link>
               <Link
-                href={`/${locale}#servicios`}
+                href={`/${locale}/servicios?utm_source=site&utm_medium=hero&utm_campaign=navigation&utm_content=see-services`}
                 className="inline-flex items-center justify-center rounded-full border border-white/30 px-5 py-2.5 font-medium hover:bg-white/10 hover:border-white/60 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-900 w-full sm:w-auto"
               >
                 {isES ? "Ver servicios" : "See services"}

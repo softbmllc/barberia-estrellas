@@ -276,17 +276,15 @@ export default function ServiciosPage({ params: { locale } }: Params) {
 
           {/* PAGOS */}
           <details className="group p-4">
-          <p className="mt-2 text-sm text-neutral-300">
-  <strong>{t("Sí.", "Yes.")}</strong>{" "}
-  {t(
-    "Aceptamos tarjetas y pagos digitales; contactless (por ejemplo Apple Pay) según disponibilidad del terminal.",
-    "We accept cards and digital payments; contactless (e.g., Apple Pay) depending on terminal availability."
-  )}
-</p>
+            <summary className="flex items-center justify-between cursor-pointer text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-900">
+              {t("¿Aceptan tarjetas y pagos digitales?", "Do you accept cards and digital payments?")}
+              <span className="ml-2 text-neutral-400 transition group-open:hidden">+</span>
+              <span className="ml-2 hidden text-neutral-400 transition group-open:inline">–</span>
+            </summary>
             <p className="mt-2 text-sm text-neutral-300">
               {t(
                 "Sí. Aceptamos tarjetas y pagos digitales; contactless (por ejemplo Apple Pay) según disponibilidad del terminal.",
-                "Yes. We accept cards and digital payments; contactless (e.g., Apple Pay) depending on terminal availability."
+                "Yes. We accept cards and digital payments; contactless (e.g., Apple Pay) depending on the terminal."
               )}
             </p>
           </details>
@@ -307,10 +305,7 @@ export default function ServiciosPage({ params: { locale } }: Params) {
           {/* EXPERIENCIA */}
           <details className="group p-4">
             <summary className="flex items-center justify-between cursor-pointer text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-900">
-            <p className="mt-2 text-sm text-neutral-300">
-  <strong>{t("Sí.", "Yes.")}</strong>{" "}
-  {t("Atendemos en Español & English.", "We serve clients in Spanish & English.")}
-</p>
+              {t("¿Atienden en Español e Inglés?", "Do you serve clients in Spanish & English?")}
               <span className="ml-2 text-neutral-400 transition group-open:hidden">+</span>
               <span className="ml-2 hidden text-neutral-400 transition group-open:inline">–</span>
             </summary>
@@ -323,17 +318,14 @@ export default function ServiciosPage({ params: { locale } }: Params) {
           </details>
           <details className="group p-4">
             <summary className="flex items-center justify-between cursor-pointer text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-900">
-            <p className="mt-2 text-sm text-neutral-300">
-  <strong>{t("Sí.", "Yes.")}</strong>{" "}
-  {t("Recomendamos llegar 5 minutos antes para que se sientan cómodos.", "We recommend arriving 5 minutes early so they feel comfortable.")}
-</p>
+              {t("¿Debo llegar con anticipación?", "Should I arrive early?")}
               <span className="ml-2 text-neutral-400 transition group-open:hidden">+</span>
               <span className="ml-2 hidden text-neutral-400 transition group-open:inline">–</span>
             </summary>
             <p className="mt-2 text-sm text-neutral-300">
               {t(
-                "Sí. Recomendamos llegar 5 minutos antes para que se sientan cómodos.",
-                "Yes. We recommend arriving 5 minutes early so they feel comfortable."
+                "Recomendamos llegar 5 minutos antes para que te sientas cómodo.",
+                "We recommend arriving 5 minutes early so you feel comfortable."
               )}
             </p>
           </details>
@@ -352,10 +344,7 @@ export default function ServiciosPage({ params: { locale } }: Params) {
           </details>
           <details className="group p-4">
             <summary className="flex items-center justify-between cursor-pointer text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-900">
-            <p className="mt-2 text-sm text-neutral-300">
-  <strong>{t("Sí.", "Yes.")}</strong>{" "}
-  {t("Color y Highlights incluye una consulta breve para definir el mejor resultado.", "Color & Highlights includes a short consult to define the best result.")}
-</p>
+              {t("¿El servicio de Color incluye consulta?", "Does Color service include a consult?")}
               <span className="ml-2 text-neutral-400 transition group-open:hidden">+</span>
               <span className="ml-2 hidden text-neutral-400 transition group-open:inline">–</span>
             </summary>
