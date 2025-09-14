@@ -22,7 +22,7 @@ export default function HeroSection() {
   return (
     <section className="relative isolate">
       {/* Contenedor fijo para evitar CLS */}
-      <div className="relative h-[68vh] min-h-[520px] w-full overflow-hidden rounded-b-2xl">
+      <div className="relative h-screen w-full overflow-hidden rounded-b-2xl">
         {/* Imagen de fondo */}
         <Image
           src="/images/hero-barberia.jpg" /* poné tu imagen en public/images */

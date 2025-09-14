@@ -35,6 +35,20 @@ export const barbers: Barber[] = [
     squareUrl: "https://book.squareup.com/appointments/b2flo8v91kroen/location/L9A40NYC216EP/services?fbclid=PAVERFWAMfIt1leHRuA2FlbQIxMAABpw-KhrkBJdN3fRItWIdFcEBcrKrDJSS7K77pqshQeNGkh2Gf8OUxU5yF6Zso_aem_1GKtZkLCibCXaNXNZz-giw"
   },
   {
+    id: "gonzalo-palu",
+    slug: "gonzalo-palu",
+    name: "Gonzalo Palu Lacoste",
+    country: "Argentina",
+    age: 24,
+    bio_es: "Soy Gonzalo Palu y estos son mis perfiles. Argentino, 24 años. Desde los 14 corto el pelo; la barbería no es solo un oficio: somos creadores de tu imagen y animadores de tu ánimo. Trabajamos cada día para dar un mejor servicio. Te invito a llevarte una gran experiencia. ~ Lo único permanente es el cambio ~",
+    bio_en: "I’m Gonzalo Palu — Argentinian, 24. Cutting hair since I was 14. Barbering is more than a trade: we craft your image and lift your spirit. We work every day to deliver a better service. I invite you to a great experience. ~ The only constant is change ~",
+    specialties: ["Fades", "Classic cuts", "Beard Shaping"],
+    instagram: "https://instagram.com/gonzapalu",
+    tiktok: "https://tiktok.com/@gonzapalu",
+    photo: "/images/barbers/gonzalo-palu.jpg",
+    squareUrl: ""
+  },
+  {
     id: "barber-02",
     slug: "barbero-02",
     name: "Por definir",

@@ -19,7 +19,7 @@ export default function EquipoPage({ params: { locale } }: Params) {
 
       {/* Solo Magic por ahora */}
       <div className="mt-8">
-        <TeamGrid locale={locale} ids={["magic"]} />
+      <TeamGrid locale={locale} ids={["magic", "gonzalo-palu"]} />
       </div>
     </section>
   );

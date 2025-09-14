@@ -51,17 +51,17 @@ export default async function LocaleLayout({
             </Link>
             <div className="hidden gap-6 md:flex text-sm text-neutral-300">
               <Link href={`/${locale}/servicios`} className="hover:text-white">{isES ? 'Servicios' : 'Services'}</Link>
-              <Link href={`/${locale}/equipo`} className="hover:text-white">{isES ? 'Equipo' : 'Staff'}</Link>
+              <Link href={`/${locale}/equipo`} className="hover:text-white">{isES ? 'Equipo' : 'Team'}</Link>
               <Link href={`/${locale}/social-club`} className="hover:text-white">Social Club</Link>
               <Link href={`/${locale}/galeria`} className="hover:text-white">{isES ? 'Galería' : 'Gallery'}</Link>
               <Link href={`/${locale}/prensa`} className="hover:text-white">{isES ? 'Prensa' : 'Press'}</Link>
               <Link href={`/${locale}/ubicacion`} className="hover:text-white">{isES ? 'Ubicación' : 'Location'}</Link>
             </div>
             <Suspense fallback={null}><div className="flex items-center gap-3">
-              <a href="https://www.instagram.com/barberiaestrellas/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-neutral-300 hover:text-white">
+              <a href="https://www.instagram.com/barberiaestrellas/" target="_blank" rel="noopener noreferrer nofollow" aria-label="Instagram" className="text-neutral-300 hover:text-white">
                 <FaInstagram size={18} />
               </a>
-              <a href="https://wa.me/17868517794" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="text-neutral-300 hover:text-white">
+              <a href="https://wa.me/17868517794" target="_blank" rel="noopener noreferrer nofollow" aria-label="WhatsApp" className="text-neutral-300 hover:text-white">
                 <FaWhatsapp size={18} />
               </a>
               <LangLink
@@ -84,7 +84,7 @@ export default async function LocaleLayout({
                 <div className="absolute right-0 top-11 w-56 rounded-xl border border-white/10 bg-neutral-900/95 p-2 shadow-xl backdrop-blur">
                   <nav className="flex flex-col text-sm text-neutral-200">
                     <Link href={`/${locale}/servicios`} className="rounded-lg px-3 py-2 hover:bg-white/10">{isES ? 'Servicios' : 'Services'}</Link>
-                    <Link href={`/${locale}/equipo`} className="rounded-lg px-3 py-2 hover:bg-white/10">{isES ? 'Equipo' : 'Staff'}</Link>
+                    <Link href={`/${locale}/equipo`} className="rounded-lg px-3 py-2 hover:bg-white/10">{isES ? 'Equipo' : 'Team'}</Link>
                     <Link href={`/${locale}/social-club`} className="rounded-lg px-3 py-2 hover:bg-white/10">Social Club</Link>
                     <Link href={`/${locale}/galeria`} className="rounded-lg px-3 py-2 hover:bg-white/10">{isES ? 'Galería' : 'Gallery'}</Link>
                     <Link href={`/${locale}/prensa`} className="rounded-lg px-3 py-2 hover:bg-white/10">{isES ? 'Prensa' : 'Press'}</Link>
@@ -108,7 +108,7 @@ export default async function LocaleLayout({
 
         <footer className="border-t border-neutral-800 bg-neutral-950">
           <div className="mx-auto max-w-6xl px-4 py-8">
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="grid gap-6 md:gap-8 md:grid-cols-2">
               {/* Google Map */}
               <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-neutral-900">
                 <div className="relative h-[260px] md:h-[320px]">
@@ -124,7 +124,7 @@ export default async function LocaleLayout({
                   <a
                     href="https://www.google.com/maps/dir/?api=1&destination=164+NW+20th+St+Suite+204,+Miami,+FL+33127"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="inline-flex items-center rounded-full border border-white/20 px-4 py-2 text-sm hover:bg-white/10"
                   >
                     {isES ? "Cómo llegar" : "Get directions"}
@@ -132,21 +132,21 @@ export default async function LocaleLayout({
                 </div>
               </div>
               {/* Reviews teaser */}
-              <div className="rounded-2xl border border-white/10 bg-neutral-900 p-4">
+              <div className="rounded-2xl border border-white/5 bg-neutral-900 p-4">
                 <h3 className="text-sm font-semibold">
                   {isES ? "Reseñas de Google" : "Google Reviews"}
                 </h3>
-                <p className="mt-2 text-sm text-neutral-400">
+                <p className="mt-2 text-sm text-neutral-200">★★★★★ 5.0 · Google</p>
+                <p className="mt-1 text-sm text-neutral-400">
                   {isES
                     ? "Pronto verás las reseñas aquí embebidas. Por ahora, podés verlas en Google Maps."
                     : "Embedded reviews coming soon. For now, view them on Google Maps."}
                 </p>
-                <p className="text-sm text-neutral-300">★★★★★ 5.0 · Google</p>
                 <a
                   href="https://www.google.com/maps/search/?api=1&query=Barber%C3%ADa+de+las+Estrellas+164+NW+20th+St+Suite+204+Miami+FL+33127"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center rounded-full border border-white/20 px-4 py-2 text-sm hover:bg-white/10"
+                  rel="noopener noreferrer nofollow"
+                  className="mt-2 inline-block text-sm underline underline-offset-4 hover:opacity-90"
                 >
                   {isES ? "Ver reseñas en Google" : "See reviews on Google"}
                 </a>
@@ -158,22 +158,22 @@ export default async function LocaleLayout({
               <div className="font-semibold text-neutral-100">Barbería de las Estrellas</div>
               <p className="mt-2 text-sm text-neutral-400">{isES ? '164 NW 20th St, Suite 204, Miami, FL 33127' : '164 NW 20th St, Suite 204, Miami, FL 33127'}</p>
               <p className="mt-1 text-sm text-neutral-400">{isES ? 'Wynwood · Estacionamiento gratuito' : 'Wynwood · Free parking'}</p>
-              <p className="mt-1 text-[13.5px]"><a href="tel:+17868517794" className="text-neutral-300 hover:underline">(786) 851-7794</a></p>
+              <p className="mt-1 text-[13.5px]"><a href="tel:+17868517794" aria-label={isES ? "Llamar al (786) 851-7794" : "Call (786) 851-7794"} className="text-neutral-300 hover:underline underline-offset-4">(786) 851-7794</a></p>
             </div>
             <div className="text-sm text-neutral-300 text-[13.5px]">
-              <div className="font-semibold tracking-tight text-neutral-200 text-sm">Secciones</div>
+              <div className="font-semibold tracking-tight text-neutral-200 text-sm">{isES ? 'Secciones' : 'Sections'}</div>
               <ul className="mt-2 space-y-1">
-                <li><Link href={`/${locale}/servicios`} className="hover:underline">Servicios</Link></li>
-                <li><Link href={`/${locale}/equipo`} className="hover:underline">Equipo</Link></li>
-                <li><Link href={`/${locale}/reservar`} className="hover:underline">Reservar</Link></li>
+                <li><Link href={`/${locale}/servicios`} className="hover:underline underline-offset-4">{isES ? 'Servicios' : 'Services'}</Link></li>
+                <li><Link href={`/${locale}/equipo`} className="hover:underline underline-offset-4">{isES ? 'Equipo' : 'Team'}</Link></li>
+                <li><Link href={`/${locale}/reservar`} className="hover:underline underline-offset-4">{isES ? 'Reservar' : 'Book'}</Link></li>
               </ul>
             </div>
             <div className="text-sm text-neutral-300 text-[13.5px]">
-              <div className="font-semibold tracking-tight text-neutral-200 text-sm">Contacto</div>
+              <div className="font-semibold tracking-tight text-neutral-200 text-sm">{isES ? 'Contacto' : 'Contact'}</div>
               <ul className="mt-2 space-y-1">
-                <li><a href="https://www.instagram.com/barberiaestrellas/" target="_blank" rel="noopener noreferrer" className="hover:underline">{isES ? 'Instagram' : 'Instagram'}</a></li>
-                <li><a href="https://wa.me/17868517794" target="_blank" rel="noopener noreferrer" className="hover:underline">{isES ? 'WhatsApp' : 'WhatsApp'}</a></li>
-                <li><Link href={`/${locale}/ubicacion`} className="hover:underline">Ubicación &amp; Parking</Link></li>
+                <li><a href="https://www.instagram.com/barberiaestrellas/" target="_blank" rel="noopener noreferrer nofollow" className="hover:underline underline-offset-4">{isES ? 'Instagram' : 'Instagram'}</a></li>
+                <li><a href="https://wa.me/17868517794" target="_blank" rel="noopener noreferrer nofollow" className="hover:underline underline-offset-4">{isES ? 'WhatsApp' : 'WhatsApp'}</a></li>
+                <li><Link href={`/${locale}/ubicacion`} className="hover:underline underline-offset-4">{isES ? 'Ubicación & Parking' : 'Location & Parking'}</Link></li>
               </ul>
             </div>
           </div>
@@ -182,7 +182,7 @@ export default async function LocaleLayout({
             <a
               href="https://www.devrodri.com"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="font-semibold text-neutral-300 transition-colors hover:text-white"
             >
               Rodrigo Opalo
